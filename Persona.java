@@ -1,18 +1,16 @@
 public class Persona {
-
     //Atributos
     String nombre;
-    String aPaterno;
-    String aMaterno;
-    char sexo;
-    String fecha;
+    String Curp;
+    String Rfc;
 
-    public Persona(String nombre, String aPaterno, String aMaterno, char sexo,  String fecha) {
+    public Persona(String nombre, String Curp, String Rfc) {
         setNombre(nombre);
-        setAPaterno(aPaterno);
-        setAMaterno(aMaterno);
-        setSexo(sexo);
-        setFecha(fecha);
+        setCURP(Curp);
+        setRFC(Rfc);        
+    }
+
+    public Persona(){
     }
 
     //Getters y Setters
@@ -25,39 +23,20 @@ public class Persona {
     }
 
     //////////////////////////////////////////////
-    public String getAPaterno(){
-        return aPaterno;
+    public String getCURP(){
+        return Curp;
     }
 
-    public void setAPaterno(String aPaterno){
-        this.aPaterno = aPaterno;
-    }
-
-    //////////////////////////////////////////////
-    public String getAMaterno(){
-        return aMaterno;
-    }
-
-    public void setAMaterno(String aMaterno){
-        this.aMaterno = aMaterno;
+    public void setCURP(String Curp) {
+        this.Curp = Curp;
     }
 
     //////////////////////////////////////////////
-    public char getSexo(){
-        return sexo;
+    public String getRFC(){
+        return Rfc;
     }
 
-    public void setSexo(char sexo){
-        this.sexo = sexo;
+    public void setRFC(String Rfc) {
+        this.Rfc = Rfc;
     }
-
-    //////////////////////////////////////////////
-    public String getFecha(){
-        return fecha;
-    }
-
-    public void setFecha(String fecha){
-        this.fecha = fecha;
-    }
-
 }
